@@ -1,0 +1,23 @@
+package org.jsp.controller;
+
+import java.util.Scanner;
+
+import org.jsp.dao.DepartmentDao;
+import org.jsp.dao.EmployeeDao;
+
+public class UserController {
+	static Scanner s= new Scanner(System.in);
+	static EmployeeDao edao = new EmployeeDao();
+	static DepartmentDao dao = new DepartmentDao();
+
+	public static void main(String[] args) {
+		int id=s.nextInt();
+		switch (id) {
+		case 1:
+			savedept();
+			break;
+		}
+		
+	}
+
+}

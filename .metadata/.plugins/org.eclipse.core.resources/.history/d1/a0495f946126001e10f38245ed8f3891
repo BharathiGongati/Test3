@@ -1,0 +1,17 @@
+package org.jsp.controller;
+
+import java.util.Scanner;
+
+import org.jsp.dao.DepartmentDao;
+import org.jsp.dao.EmployeeDao;
+
+public class UserController {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		EmployeeDao edao=new EmployeeDao();
+		DepartmentDao dao=new DepartmentDao();
+		
+		
+	}
+
+}

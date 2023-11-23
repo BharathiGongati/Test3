@@ -1,0 +1,5 @@
+package org.jsp.dto;
+
+public class Configuration {
+
+}

@@ -1,0 +1,10 @@
+package org.jsp.dto;
+
+import javax.persistence.EntityManager;
+
+public class Configuration {
+		private EntityManager getEntityManager() {
+
+		}
+
+}

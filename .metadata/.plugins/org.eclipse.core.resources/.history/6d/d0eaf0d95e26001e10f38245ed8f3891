@@ -1,0 +1,23 @@
+package org.jsp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.jsp.dto.Department;
+
+public class DepartmentDao {
+	
+	EntityManager manager=Persistence.createEntityManagerFactory("dev").createEntityManager();
+	public Department saveDept(Department dept) {
+		EntityTransaction t=manager.getTransaction();
+		manager.merge(dept);
+		t.begin();
+		t.commit();
+		return dept;
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package org.jsp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+
+public class DepartmentDao {
+	
+	EntityManager manager=Persistence.createEntityManagerFactory("dev").createEntityManager();
+	public 
+	
+	
+
+}

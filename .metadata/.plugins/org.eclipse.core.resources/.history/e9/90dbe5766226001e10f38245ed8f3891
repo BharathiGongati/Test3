@@ -1,0 +1,62 @@
+package org.jsp.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import antlr.collections.List;
+
+@Entity
+public class Department {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+	private int id;
+	@Column
+	private String location;
+	@Column
+	private String desg;
+	@OneToMany
+	private java.util.List<Employee> emp;
+
+	public java.util.List<Employee> getEmp() {
+		return emp;
+	}
+
+	public void setEmp(java.util.List<Employee> emp) {
+		this.emp = emp;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	@Override
+	public String toString() {
+		return "Department [id=" + id + ", location=" + location + ", desg=" + desg + "]";
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getDesg() {
+		return desg;
+	}
+
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
+
+}

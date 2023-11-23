@@ -1,0 +1,6 @@
+package org.jsp.dto;
+
+public class Department {
+	
+
+}

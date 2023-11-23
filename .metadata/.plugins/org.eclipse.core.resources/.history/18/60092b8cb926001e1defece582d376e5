@@ -1,0 +1,14 @@
+package org.jsp.dto;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import org.springframework.context.annotation.Bean;
+@Configuration
+public class userConfiguration {
+	@Bean
+		private EntityManager getEntityManager() {
+			return Persistence. createEntityManagerFactory("dev").createEntityManager();
+
+		}
+
+}

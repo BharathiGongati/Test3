@@ -1,0 +1,9 @@
+package org.jsp.dto;
+
+
+public class Configuration {
+		private void getEntityManager() {
+
+		}
+
+}
